@@ -124,3 +124,69 @@ In total, I have taken on four complete semesters of co-ops at two different com
 My motivation for this project was brought to life organically through my own passion to solve an existing problem. For some back-story: I was on co-op during the COVID quarantine, and I was working from home. I also adopted a cat who required a little more attention than I had the capacity to give her at the time, so I started thinking of a solution. My idea was to create an autonomous laser-pointer toy that could play with my cat while giving me time to focus on my work. I crafted the general basis of this senior design project from that very same idea. However, my project partner and I decided to make the project idea a little more interesting.
 
 My partner and I re-designed the plans I created for the autonomous cat laser to instead be a practical laser-targeting system that can pop balloons. The expected result will be that the Artificial Intelligence will be trained to recognize the general shape and color of a balloon, and the shape of a target that we draw on the balloon. Then, depending on if the balloon fits a specified criterion, the AI will send a command to an Arduino to point the laser at a specific coordinate and pop the balloon. My own contributions will be tracked via how many lines of code I write, and what physical contributions I make by crafting the hardware that will be used in our project. We will know that we are done when we have created a functional, autonomous laser targeting system which can identify balloons of a specified criterion and command the machine to shine the laser at that balloon. We will know that we have done a good job if the system can effectively identify which balloons fit the criterion that we give it, and if the system can pop only those balloons and no others. I am very excited for this project as it seems like a very fun opportunity to gain some experience in concepts that I am interested in!
+
+# Professional Biographies
+## Ian
+## **Contact Information**
+- Name: Ian Schuster
+- Email: schustic@mail.uc.edu
+
+## **Coop Work Experience**
+
+### **Losant IoT**
+Front End Intern Jun 2020-Present
+* Working on an Iot Solutions webapp adding new features and fixing defects
+* Extensive experience with React
+* Minor feature work on NodeJS back-end
+* Experience doing testing and QA with React Testing Library
+* Performing code review
+* Writing documentation on new features
+
+### **Siemens PLM Software**
+Student Co-Op Jan-May 2019 and Aug-Dec 2019
+* Worked on framework focused agile team for a PLM web app
+* Fixed a myriad of defects ranging from styling issues and client code issues to back-end server issues
+* Presented high level demonstrations of client processes for upper management and documentation teams
+* Used Angular, JQuery, GraphQL, and Docker
+
+## **Project Sought**
+- Something with an end result people will actually be able to use/have their hands on
+- Can be physical or fully digital, something with IoT based devices would be desirable
+- Preferably written with Python (not required)
+- Working with AI would be a positive
+- Prefer not to have a research based project
+## James
+## Contact Information
+Email: garretjb@mail.uc.edu
+Phone: 513-543-9825
+
+## Co-op Work Experience
+
+### Siemens PLM - Spring and Fall Semesters 2019
+**Quality Assurance and Defect Engineer**
+-  Worked in a position fixing code defects contained in two software products: Active Workspace and Team Center respectively. 
+-  Found and fixed approximately 30 significant defects in areas related to: Security (Cross Site Scripting), Server-Side Regression, Unintended Command Behavior and User Interface Commands. 
+-  Became proficient and gained experience with programming languages and frameworks such as: Java, JavaScript, C/C++, HTML, CSS/SASS, Node, Angular and JSON. 
+
+**Software Engineer - Dead Command Reference Cleaner**
+-  Created a utility that was used to traverse thousands of files and millions of lines of code to remove deprecated commands from the Team Center application. 
+
+**Software Engineer – Chrome Developer Tools Extension**
+-  Created a universal Chrome Extension that could be used to collect the property variables of a webpage into one window and then automatically update those variables when the page refreshed. This utility was created so that web pages of the Team Center product could be debugged more efficiently.
+
+### CADTalk - Spring and Summer Semesters 2021
+**Software Engineer - ReleaseNotes API**
+- Created an Azure Function App as well as an App Service called ExtractReleaseNotes and CADTalkReleaseAPI respectively.
+- Leveraged Azure DevOps API calls to automate the extraction of release note data from each build of a product iteration.
+- Became proficient with Durable Functions (an extension of Azure Functions).
+- Gained a lot of experience coding in C# and creating Rest API's.
+- Created both integration tests and unit tests, as well as custom build pipelines for the apps mentioned above.
+
+**Quality Assurance and Defect Engineer**
+- Worked across more than 20 different codebases for various products to find and fix bugs of almost any type you could think of.
+- Gained experience coding in Visual Basic.
+- Created more than 50 unit tests spread over a few different codebases.
+
+## Project Sought
+- Combine a robotic arm with a laser-pointer, a camera, and the power of AI in order to create an interactive laser-pointer to keep a cat entertained and occupied throughout the day. 
+- Anything that has to do with AI, data science, or Rest API's
