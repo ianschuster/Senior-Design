@@ -100,4 +100,4 @@ As an end user, I want to be able to stop the laser at any point (like a kill sw
 |**Task 12**|50%|50%|
 |**Task 13**|50%|50%|
 # Powerpoint Slideshow
-[Powerpoint Presentation](homeworks/Team Auto Laser.pptx)
+[Powerpoint Presentation](Homeworks/Team Auto Laser.pptx)
