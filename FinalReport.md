@@ -190,3 +190,6 @@ Phone: 513-543-9825
 ## Project Sought
 - Combine a robotic arm with a laser-pointer, a camera, and the power of AI in order to create an interactive laser-pointer to keep a cat entertained and occupied throughout the day. 
 - Anything that has to do with AI, data science, or Rest API's
+
+# Appendix
+Original idea and 3D printer plans for the laser control assembly can be found [here](https://www.instructables.com/CheetahBeam-a-DIY-Automatic-Cat-Laser-Toy/).
