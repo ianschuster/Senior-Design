@@ -7,6 +7,10 @@ Name | Major | Email
 Braydon Garrett | Computer Science | garretjb@mail.uc.edu
 Ian Schuster | Computer Science |  schustic@mail.uc.edu
 
+### **Getting Started**
+
+The Auto Laser User Guide can be found (here)[https://github.com/ianschuster/Senior-Design/blob/main/UserGuide.md].
+
 **Team Advisor:** Fred Annexstein
 ### **Project Abstract**
 
