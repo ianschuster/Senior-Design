@@ -11,7 +11,7 @@ Ian Schuster | Computer Science |  schustic@mail.uc.edu
 
 ### **Getting Started**
 
-The Auto Laser User Guide can be found (here)[https://github.com/ianschuster/Senior-Design/blob/main/UserGuide.md].
+The Auto Laser User Guide can be found [here](https://github.com/ianschuster/Senior-Design/blob/main/UserGuide.md).
 
 ### **Project Abstract**
 
