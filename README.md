@@ -7,11 +7,12 @@ Name | Major | Email
 Braydon Garrett | Computer Science | garretjb@mail.uc.edu
 Ian Schuster | Computer Science |  schustic@mail.uc.edu
 
+**Team Advisor:** Fred Annexstein
+
 ### **Getting Started**
 
 The Auto Laser User Guide can be found (here)[https://github.com/ianschuster/Senior-Design/blob/main/UserGuide.md].
 
-**Team Advisor:** Fred Annexstein
 ### **Project Abstract**
 
 The Auto Laser project will revolve around controlling a laser pointer which moves based on an AI which detects and tracks objects such as balloons. The laser pointer will be powerful enough to pop said balloons, and should be able to take different inputs such as color or shape to determine whether to target the balloon(s) or not.
