@@ -13,7 +13,6 @@ a_file.close()
 KNOWN_DISTANCE = 12 #inches
 KNOWN_RADIUS = 5 #inches
 KNOWN_RADIUS_IN_IMAGE = 200 #pixels
-radius = 0
 
 arduino = serial.Serial(port='COM3', baudrate=115200)
 def write_read_arduino(command):
@@ -82,9 +81,6 @@ def find_center_point(max_contour):
     # Get the x and y coords of the center dot location on the image
     x_coord = int(moments["m10"] / moments["m00"])
     y_coord = 450 - int(moments["m01"] / moments["m00"])
-
-    # Find the distance
-    distance = distanceFinder(focalLength, KNOWN_RADIUS, radius)
     
     # Scale the coordinates down and convert them to angles that the servos can make use of.
     # The x and y coefficients are hardcoded calibration values.
@@ -112,12 +108,14 @@ def find_center_point(max_contour):
 
 # Adds an outline around the balloon and adds a center dot on the frame displayed to users
 def draw_outline(max_contour, frame):
-    global radius
     center = None
     ((x, y), radius) = cv2.minEnclosingCircle(max_contour)
 
     center = find_center_point(max_contour)
 
+    # Find the distance between the balloon and the camera
+    distance = distanceFinder(focalLength, KNOWN_RADIUS, radius)
+    
     if radius > 10:
         cv2.circle(frame, center, 5, (0, 0, 255), -1)
         cv2.drawContours(frame, [max_contour], 0, (0, 255, 0), 3)
