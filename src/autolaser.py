@@ -10,11 +10,40 @@ a_file = open("data.pkl", "rb")
 balloon_bounds = pickle.load(a_file)
 a_file.close()
 
+KNOWN_DISTANCE = 12 #inches
+KNOWN_RADIUS = 5 #inches
+KNOWN_RADIUS_IN_IMAGE = 200 #pixels
 
-#arduino = serial.Serial(port='COM3', baudrate=115200)
+arduino = serial.Serial(port='COM3', baudrate=115200)
 def write_read_arduino(command):
-    #arduino.write(bytes(command, 'utf-8'))
-    return
+    arduino.write(bytes(command, 'utf-8'))
+
+
+def focalLengthFinder(knownDistance, knownRadius, radiusInImage):
+    '''
+    This function calculates the focal length which is used to find the distance between the object and the camera.
+    :param1 knownDistance(int/float) : Distance from object to camera measured in real world.
+    :param2 knownRadius(float): Real world radius of the object.
+    :param3 radiusInImage(float): Pre-measured radius of the object in the image, measured in pixels.
+    returns FocalLength(float):
+    '''
+    focalLength = ((radiusInImage * knownDistance) / knownRadius)
+    return focalLength
+
+
+focalLength = focalLengthFinder(KNOWN_DISTANCE, KNOWN_RADIUS, KNOWN_RADIUS_IN_IMAGE)
+
+
+def distanceFinder(focalLength, knownRadius, radiusInVideo):
+    '''
+    This function estimates the distance. It takes the three arguments: focallength, knownRadius, radiusInImage.
+    :param1 focalLength: Focal length found through another function.
+    :param2 knownRadius(float): Real world radius of the object.
+    :param3 radiusInVideo(float): Radius of the object in the video stream, measured in pixels.
+    :returns the distance:
+    '''
+    distance = ((knownRadius * focalLength) / radiusInVideo)
+    return distance
 
 
 # Modifies the frame in order to isolate the HSV range of our balloon and create a mask
@@ -45,20 +74,21 @@ def get_max_contour(mask):
 # Finds both the center point of the balloon contour and also maps this to angles for the servos
 def find_center_point(max_contour):
     global L
+    global radius
     moments = cv2.moments(max_contour)
     center = (int(moments["m10"] / moments["m00"]), int(moments["m01"] / moments["m00"]))
 
     # Get the x and y coords of the center dot location on the image
     x_coord = int(moments["m10"] / moments["m00"])
     y_coord = 450 - int(moments["m01"] / moments["m00"])
-
+    
     # Scale the coordinates down and convert them to angles that the servos can make use of.
     # The x and y coefficients are hardcoded calibration values.
     # The numerators are the horizontal and vertical field of view of the camera "Logitech HD Pro WebCam C910" (http://www.therandomlab.com/2013/03/logitech-c920-and-c910-fields-of-view.html)
     # The denominators are the horizontal and vertical length of the image in terms of pixels.
     # This is part of how we correlate the location of the dot in an image to the real-life location of the balloon.
-    x_coef = 70 / 600
-    y_coef = 55 / 450
+    x_coef = 70 / video_stream.get(cv2.CAP_PROP_FRAME_WIDTH)
+    y_coef = 55 / video_stream.get(cv2.CAP_PROP_FRAME_HEIGHT)
 
     # Calculate the angles to set the servos to point the laser at the center dot
     # The numbers "55" and "70" are the "zero" angles of the servos
@@ -73,7 +103,6 @@ def find_center_point(max_contour):
 
     write_read_arduino(f"{180-x_angle}x") #Send the x-angle
     write_read_arduino(f"{y_angle}y") #Send the y-angle
-
     return center
 
 
@@ -84,6 +113,9 @@ def draw_outline(max_contour, frame):
 
     center = find_center_point(max_contour)
 
+    # Find the distance between the balloon and the camera
+    distance = distanceFinder(focalLength, KNOWN_RADIUS, radius)
+    
     if radius > 10:
         cv2.circle(frame, center, 5, (0, 0, 255), -1)
         cv2.drawContours(frame, [max_contour], 0, (0, 255, 0), 3)
