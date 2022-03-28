@@ -112,13 +112,21 @@ def draw_outline(max_contour, frame):
     ((x, y), radius) = cv2.minEnclosingCircle(max_contour)
 
     center = find_center_point(max_contour)
-
-    # Find the distance between the balloon and the camera
-    distance = distanceFinder(focalLength, KNOWN_RADIUS, radius)
     
+     # Find the distance between the balloon and the camera
+    distance = distanceFinder(focalLength, KNOWN_RADIUS, radius)
+
+    ft_distance = round(int(distance) / 12, 1)
+
     if radius > 10:
         cv2.circle(frame, center, 5, (0, 0, 255), -1)
         cv2.drawContours(frame, [max_contour], 0, (0, 255, 0), 3)
+        distance_text = "Distance (FT): " + str(ft_distance)
+    else:
+        distance_text = "Distance (FT): N/A"
+
+    cv2.rectangle(frame, (15, 400), (240, 435), (0, 0, 0), cv2.FILLED)
+    cv2.putText(frame, distance_text, (15, 425), fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=.75, color=(255, 255, 255))
 
 
 # start up the gui
