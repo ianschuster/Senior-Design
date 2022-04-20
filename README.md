@@ -1,6 +1,6 @@
 1.  Project Description (updated to include 400-character abstract and should reflect final version of the project)
 
-2.  User Interface Specification (optional inclusion of UI design)
+2.  [User Interface Specification (optional inclusion of UI design)](#ui-specification)
 
 3.  Test Plan and Results (describe execution and results of all tests)
 
@@ -148,6 +148,28 @@ In total, I have taken on four complete semesters of co-ops at two different com
 My motivation for this project was brought to life organically through my own passion to solve an existing problem. For some back-story: I was on co-op during the COVID quarantine, and I was working from home. I also adopted a cat who required a little more attention than I had the capacity to give her at the time, so I started thinking of a solution. My idea was to create an autonomous laser-pointer toy that could play with my cat while giving me time to focus on my work. I crafted the general basis of this senior design project from that very same idea. However, my project partner and I decided to make the project idea a little more interesting.
 
 My partner and I re-designed the plans I created for the autonomous cat laser to instead be a practical laser-targeting system that can pop balloons. The expected result will be that the Artificial Intelligence will be trained to recognize the general shape and color of a balloon, and the shape of a target that we draw on the balloon. Then, depending on if the balloon fits a specified criterion, the AI will send a command to an Arduino to point the laser at a specific coordinate and pop the balloon. My own contributions will be tracked via how many lines of code I write, and what physical contributions I make by crafting the hardware that will be used in our project. We will know that we are done when we have created a functional, autonomous laser targeting system which can identify balloons of a specified criterion and command the machine to shine the laser at that balloon. We will know that we have done a good job if the system can effectively identify which balloons fit the criterion that we give it, and if the system can pop only those balloons and no others. I am very excited for this project as it seems like a very fun opportunity to gain some experience in concepts that I am interested in!
+
+# UI Specification
+
+Our UI has 3 states it can be in and was built using PySimpleGUI
+
+## Startup State
+
+![image](https://user-images.githubusercontent.com/66269649/164272592-405c3ef1-be4f-49b8-8025-63b5b59409a6.png)
+
+This state serves as our "Main Menu", you can reach the other two states via this one which is displayed on startup.
+
+## Calibration State
+
+![image](https://user-images.githubusercontent.com/66269649/164273175-15cd4f55-5f8a-46ad-82cf-65ef1f8bfa13.png)
+
+This state serves as a way to modify the data.pkl file which contains the color bounds information for all the different balloon colors. Users can use the dropdown to switch between balloon colors whose values are initialized using the file and can save new values for these bounds.
+
+## Running State
+
+![image](https://user-images.githubusercontent.com/66269649/164273390-9d9faf85-5686-4c6d-9d84-5f3a6d46d12d.png)
+
+This state is where the actual balloon tracking and Arduino commands are ran. Users can use the radio buttons to switch which balloon they are targeting.
 
 # Professional Biographies
 ## Ian
