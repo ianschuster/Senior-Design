@@ -1,3 +1,22 @@
+1.  Project Description (updated to include 400-character abstract and should reflect final version of the project)
+
+2.  User Interface Specification (optional inclusion of UI design)
+
+3.  Test Plan and Results (describe execution and results of all tests)
+
+4.  User Manual (includes links and screenshots of online user manual; include FAQ in report)
+
+5.  [Spring Final PPT Presentation,](https://docs.google.com/presentation/d/1YG5sl0y60M1_kWhWt-65IkbAQFn56dPzIMEzrSycII4/edit#slide=id.p)
+
+6.  [Final Expo Poster](https://drive.google.com/file/d/1vePU4g8YiPHxov0ruWXQrGYFvn7KgfSE/view)
+
+7.  Assessments
+
+[Initial Self-Assessments](#self-assessment-essays)
+
+Final Self-Assessments (spring semester, do not include confidentialTeam-Assessments)
+
+8.  Summary of Hours and Justification (one per individual team member)
 
 # Auto Laser
 
