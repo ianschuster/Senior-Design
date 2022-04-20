@@ -21,8 +21,8 @@ Assemble the 3D-printed housing and the wiring for the servos and laser (follow 
 
 ## Running the system
 These are the steps for running the program:
-1. Open the autolaser.py code in PyCharm. 
-2. With the arduino and a webcam connected to your PC, run the code and you should see a GUI pop up on your screen.
+1. Run these commands: pip install serial, pip install cv2, pip install pickle, pip install PySimpleGUI
+2. With the arduino and a webcam connected to your PC, run the code using the command "Python3 autolaser.py" and you should see a GUI pop up on your screen.
 3. Within this GUI, you can either select "Perform Calibration" to calibrate the program to lighting of your specific environment, or you can click "Start" to begin the detection and targeting of balloons. 
 4. If you click "Perform Calibration", you will be faced with a number of different slider options. Using the image on the right of the GUI as reference, hold the balloon in plain view of the camera and adjust the sliders until only the balloon is visible in the image. Ideally, the image will be completely black with a white circle in the area where the balloon is detected.
 5. If you click start, the GUI will change and you will have the ability to select which color of balloon you want to target. You will also see a Distance counter in the bottom left of the image which is an estimation of the distance between the balloon and the camera.
