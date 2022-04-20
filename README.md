@@ -2,7 +2,7 @@
 
 2.  [User Interface Specification (optional inclusion of UI design)](#ui-specification)
 
-3.  (Test Plan and Results (describe execution and results of all tests))[https://github.com/ianschuster/Senior-Design/blob/main/Homeworks/seniordesign%20test%20plan.pdf]
+3.  [Test Plan and Results (describe execution and results of all tests)](https://github.com/ianschuster/Senior-Design/blob/main/Homeworks/seniordesign%20test%20plan.pdf)
 
 4.  User Manual (includes links and screenshots of online user manual; include FAQ in report)
 
