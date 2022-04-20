@@ -154,6 +154,11 @@ My partner and I re-designed the plans I created for the autonomous cat laser to
 
 ## Ian Schuster
 
+My individual contribution to the project was primarily on the software side of things. I handled the research and implementation of the imaging library OpenCV which was used to both track the balloons as well as display the “Targeting View” to the user which shows where the program believes the balloon to be. This required viewing lots of videos to get the basics of the library down followed by using the OpenCV docs to find more specialized methods for our specific case. In addition to this I also researched and implemented PySimpleGui to give our program a UI element as well as increase ease of use especially regarding the calibration of the balloons. This required finding a way to read and write to a file for the balloon HSV bounds as well as reformatting our code to have different event loops for the different UI states I created.
+
+I 100% feel as though this project helped build upon my Python skills as well as give me new knowledge of imaging libraries as well as UI libraries.  I now have knowledge of how to get, analyze, modify, and return video from a Python script as well as the framework for building a true AI image recognizer using contours should I take that deeper route. I think the end result tracking was a big success, it works extremely responsively and integrated into the GUI very cleanly in my opinion. The biggest obstacle was finding a way to find and  track the balloons in a lightweight way to ensure that there was as little delay as possible in the tracking using a video stream while also being accurate and precise. This ended up not being feasible with the original desire to use true image recognition, however I believe the end solution works near flawlessly for our problem and application.
+
+
 ## James Garrett
 
 # UI Specification
