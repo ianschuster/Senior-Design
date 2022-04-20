@@ -248,7 +248,8 @@ Phone: 513-543-9825
 
 ## Ian Schuster
 
-I spent about 40 hours in total on the project. A big amount of this time was spent on research and implementation of ways to track the balloons, as well as learning PySimpleGui to build the UI for the program.
+I spent about 40 hours in total on the project. The largest individual time chunk I spent was researching image libraries for the project which lead to me finding OpenCV. Once I had found OpenCV a good amount of time was spent researching what it can do through Youtube videos, followed by messing around with it myself, scouring the OpenCV docs, and finally implementing and optimizing a solution that worked for us. Once this was complete I spent about 10 hours researching UI options, learning PySimpleGui, and building and implementing it into our program.
+
 
 ## James Garrett
 
