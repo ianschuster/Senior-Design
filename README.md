@@ -14,7 +14,7 @@
 
 [Initial Self-Assessments](#self-assessment-essays)
 
-Final Self-Assessments (spring semester, do not include confidentialTeam-Assessments)
+[Final Self-Assessments (spring semester, do not include confidentialTeam-Assessments)](#final-assessments)
 
 8. [Summary of Hours and Justification (one per individual team member)](#total-hours-spent)
 
@@ -149,6 +149,12 @@ In total, I have taken on four complete semesters of co-ops at two different com
 My motivation for this project was brought to life organically through my own passion to solve an existing problem. For some back-story: I was on co-op during the COVID quarantine, and I was working from home. I also adopted a cat who required a little more attention than I had the capacity to give her at the time, so I started thinking of a solution. My idea was to create an autonomous laser-pointer toy that could play with my cat while giving me time to focus on my work. I crafted the general basis of this senior design project from that very same idea. However, my project partner and I decided to make the project idea a little more interesting.
 
 My partner and I re-designed the plans I created for the autonomous cat laser to instead be a practical laser-targeting system that can pop balloons. The expected result will be that the Artificial Intelligence will be trained to recognize the general shape and color of a balloon, and the shape of a target that we draw on the balloon. Then, depending on if the balloon fits a specified criterion, the AI will send a command to an Arduino to point the laser at a specific coordinate and pop the balloon. My own contributions will be tracked via how many lines of code I write, and what physical contributions I make by crafting the hardware that will be used in our project. We will know that we are done when we have created a functional, autonomous laser targeting system which can identify balloons of a specified criterion and command the machine to shine the laser at that balloon. We will know that we have done a good job if the system can effectively identify which balloons fit the criterion that we give it, and if the system can pop only those balloons and no others. I am very excited for this project as it seems like a very fun opportunity to gain some experience in concepts that I am interested in!
+
+# Final Assessments
+
+## Ian Schuster
+
+## James Garrett
 
 # UI Specification
 
