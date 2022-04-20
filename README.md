@@ -4,7 +4,7 @@
 
 3.  [Test Plan and Results (describe execution and results of all tests)](https://github.com/ianschuster/Senior-Design/blob/main/Homeworks/seniordesign%20test%20plan.pdf)
 
-4.  User Manual (includes links and screenshots of online user manual; include FAQ in report)
+4.  [User Manual (includes links and screenshots of online user manual; include FAQ in report)](https://github.com/ianschuster/Senior-Design/blob/main/UserGuide.md)
 
 5.  [Spring Final PPT Presentation,](https://docs.google.com/presentation/d/1YG5sl0y60M1_kWhWt-65IkbAQFn56dPzIMEzrSycII4/edit#slide=id.p)
 
