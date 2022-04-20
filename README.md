@@ -1,4 +1,4 @@
-1.  Project Description (updated to include 400-character abstract and should reflect final version of the project)
+1.  [Project Description (updated to include 400-character abstract and should reflect final version of the project)](https://github.com/ianschuster/Senior-Design/blob/main/project-description.md)
 
 2.  [User Interface Specification (optional inclusion of UI design)](#ui-specification)
 
