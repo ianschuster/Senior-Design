@@ -161,6 +161,11 @@ I 100% feel as though this project helped build upon my Python skills as well as
 
 ## James Garrett
 
+My contribution to the project was primarily on the physical aspect of the project as well as some software. I handled the creation of the physical housing and servo/laser setup, which included learning how to solder the arduino board and how to connect electronics with wires. To do this, I used many online resources and I also had a friend who taught me how to solder. Next, I taught myself how to code in arduino and I developed some code so that our python script could easily interface with the arduino to control the servos and laser. This part was relatively easily as there were many online resources that I could reference. The hardest part was optimizing the code so that it could process data quick enough for the servos to run smoothly. At first, the servos would only be able to move every 10 seconds or so... which was far outside of our desired outcome for the project. The solution was two-fold: decrease the amount of data being sent, and send that data in an extremely simplified format. After I applied those changes, it ended up working exactly how we wanted it to.
+
+I learned many new skills by working on this project. Some of these skills include: soldering electronics, 3D printing, and interfacing with arduinos. I also developed a method to translate cartesian coordinates into angular coordinates. Through trial and error as well as hours of research into various properties of cameras, I figured out that I could create an equation that would apply a coefficient to the (x, y) coordinates and would give us the angular equivalent. To do this, I had to find the field of view of the camera as well as the number of pixels on the x-axis and y-axis of the image. Once those numbers were obtained, the equation was just simple division and multiplication. The nuance is that the camera has to be almost perfectly centered for the laser to hit the correct area. Overall, this was definitely the hardest obstacle I faced in this project. (See the "find_center_point" function in autolaser.py for details)
+
+
 # UI Specification
 
 Our UI has 3 states it can be in and was built using PySimpleGUI
@@ -257,7 +262,7 @@ I spent about 40 hours in total on the project. The largest individual time chun
 
 
 ## James Garrett
-
+My total time spent on this project was around 45 hours. I spent much of that time assembling the physical side of the project which included: 3D printing the housing, soldering wires together, soldering the arduino, and making the system compact enough to actually fit within the housing that we printed. After I had the physical side created, I spent a lot of time developing the arduino code and increasing the speed at which it could receive and execute commands from the python code. In the python code, I created a way of translating the cartesian (x, y) coordinates into angular coordinates that the servos could make use of. This required a lot of trial and error and took around 8 hours to get working correctly.
 
 
 # Appendix
